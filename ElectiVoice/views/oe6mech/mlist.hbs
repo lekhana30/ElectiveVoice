@@ -1,0 +1,38 @@
+<h3><a class="btn btn-secondary" href="/oe6mech"><i class="fa fa-plus"></i> Create New</a> Course List</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course Title</th>
+                <th>Course Code</th>
+                <th>Credits</th>
+                <th>Course Contents</th>
+                <th>Text Books</th>
+                <th>Reference Books</th>
+                <th>Subject Teacher</th>
+                <th>Opted Students</th>
+                <th>Passed Students</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each list}}
+            <tr>
+                <td>{{this.CourseTitle}}</td>
+                <td>{{this.CourseCode}}</td>
+                <td>{{this.Credits}}</td>
+                <td>{{this.CourseContents}}</td>
+                <td>{{this.TextBooks}}</td>
+                <td>{{this.ReferenceBooks}}</td>
+                <td>{{this.SubjectTeacher}}</td>
+                <td>{{this.OptedStudents}}</td>
+                <td>{{this.PassedStudents}}</td>
+                
+
+                <td>
+                    <a href="/oe6mech/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                    <a href="/oe6mech/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>

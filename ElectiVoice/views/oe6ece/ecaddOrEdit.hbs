@@ -1,0 +1,67 @@
+<h3>{{viewTitle}}</h3>
+
+    <form action="/oe6ece" method="POST" autocomplete="off">
+        <input type="hidden" name="_id" value="{{oe6ece._id}}">
+        <div class="form-group">
+            <label>Course Title</label>
+            <input type="text" class="form-control" name="CourseTitle" placeholder="CourseTitle" value="{{oe6ece.CourseTitle}}">
+            <div class="text-danger">
+                {{oe6ece.CourseTitleError}}</div>
+        </div>
+        <div class="form-group">
+            <label>Course Code</label>
+            <input type="text" class="form-control" name="CourseCode" placeholder="CourseCode" value="{{oe6ece.CourseCode}}">
+            <div class="text-danger">
+                {{oe6ece.CourseCodeError}}</div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Credits</label>
+                <input type="text" class="form-control" name="Credits" placeholder="Credits" value="{{oe6ece.Credits}}">
+            </div>
+        </div>
+            <div class="form-group col-md-6">
+                <label>CourseContents</label>
+                <input type="text" class="form-control" name="CourseContents" placeholder="CourseContents" value="{{oe6ece.CourseContents}}">
+            </div>
+        
+            <div class="form-group col-md-6">
+                <label>TextBooks</label>
+                <input type="text" class="form-control" name="TextBooks" placeholder="TextBooks" value="{{oe6ece.TextBooks}}">
+            </div>
+             <div class="form-group col-md-6">
+                <label>Reference Books</label>
+                <input type="text" class="form-control" name="ReferenceBooks" placeholder="ReferenceBooks" value="{{oe6ece.ReferenceBooks}}">
+            </div>
+             <div class="form-group col-md-6">
+                <label>SubjectTeacher</label>
+                <input type="text" class="form-control" name="SubjectTeacher" placeholder="SubjectTeacher" value="{{oe6ece.SubjectTeacher}}">
+            </div>
+             <div class="form-group col-md-6">
+                <label>OptedStudents</label>
+                <input type="text" class="form-control" name="OptedStudents" placeholder="OptedStudents" value="{{oe6ece.OptedStudents}}">
+            </div>
+             <div class="form-group col-md-6">
+                <label> PassedStudents</label>
+                <input type="text" class="form-control" name="PassedStudents" placeholder="PassedStudents" value="{{oe6ece.PassedStudents}}">
+                
+            </div>
+
+        
+        <div class="form-group">
+            <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+            <a class="btn btn-secondary" href="/oe6ece/eclist"><i class="fa fa-list-alt"></i> View All</a>
+        </div>
+    </form>
+
+
+
+    
+        
+    
+   
+        
+   
+
+    
+   
